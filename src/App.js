@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="column">
+      <div className="dashboard">
+        <iframe
+          title="csv"
+          src="https://pnap.vizion.ai/kibana/app/kibana#/dashboard/a9f21a00-d0d8-11e9-8c91-4dc5d35831e9?embed=true&_g=()" 
+          height="700" 
+          width="1400">
+        </iframe>
+      </div>
+      <div className="dashboard">
+        <iframe
+          title="csv" 
+          src="https://pnap.vizion.ai/kibana/app/kibana#/dashboard/a9f21a00-d0d8-11e9-8c91-4dc5d35831e9?_g=()" 
+          height="700" 
+          width="1450">
+        </iframe>
+      </div>
     </div>
   );
 }
